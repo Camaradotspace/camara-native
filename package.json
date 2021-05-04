@@ -1,6 +1,6 @@
 {
   "name": "camara-native",
-  "version": "1.0.0-beta.3",
+  "version": "1.0.0-beta.4",
   "main": "lib\\commonjs\\index.js",
   "description": "A design system that helps you build your ideas quickly",
   "author": {
@@ -23,6 +23,7 @@
   "homepage": "https://github.com/Camaradotspace/camara-native#readme",
   "scripts": {
     "start": "expo start",
+    "build": "bob build",
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
