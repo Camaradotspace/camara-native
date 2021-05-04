@@ -7,15 +7,21 @@
     "lib": ["dom", "esnext"],
     "moduleResolution": "node",
     "skipLibCheck": true,
+    "noEmit": false,
     "resolveJsonModule": true
   },
   "exclude": [
     "node_modules",
     "dist",
     "lib",
+    "__mocks__",
+    "storybook",
+    "stories",
+    "**/*.js",
     "**/*.spec.ts",
-    "**/*.stories.[tj]sx",
-    "**/*.test.[tj]sx",
+    "**/*.stories.tsx",
+    "**/*.stories.jsx",
+    "**/*.test.tsx",
     "App.test.tsx",
     "App.tsx"
   ]
