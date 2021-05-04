@@ -1,6 +1,6 @@
 {
   "name": "camara-native",
-  "version": "1.0.0-beta.1",
+  "version": "1.0.0-beta.2",
   "main": "lib\\commonjs\\index.js",
   "description": "A design system that helps you build your ideas quickly",
   "author": {

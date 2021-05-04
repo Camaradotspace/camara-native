@@ -1,30 +1,28 @@
 import * as React from "react";
-import { Button as RNButton } from "react-native";
+import { Button as RNButton, View } from "react-native";
+import { ButtonProps } from "./button.types";
 
-interface IProps {
-  title: string;
-  onPress: () => void;
-  color?: string;
-  disabled?: boolean;
-}
-
-export const Button: React.FunctionComponent<IProps> = ({
+export const Button: React.FunctionComponent<ButtonProps> = ({
   title,
-  onPress,
-  color,
+  handlePress,
+  btnColor,
   disabled,
+  bgColor,
 }) => {
   return (
-    <RNButton
-      title={title}
-      onPress={onPress}
-      color={color}
-      disabled={disabled}
-    />
+    <View style={{ backgroundColor: bgColor }}>
+      <RNButton
+        title={title}
+        onPress={handlePress}
+        color={btnColor}
+        disabled={disabled}
+      />
+    </View>
   );
 };
 
 Button.defaultProps = {
-  color: "red",
+  btnColor: "#fff",
+  bgColor: "#024908",
   disabled: false,
 };

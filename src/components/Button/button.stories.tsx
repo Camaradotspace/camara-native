@@ -12,15 +12,15 @@ export default {
 export const Basic = () => (
   <Button
     title="Basic Button"
-    onPress={() => console.log("Basic button clicked")}
+    handlePress={() => console.log("Basic button clicked")}
   />
 );
 export const Default = () => (
   <View style={{ alignItems: "center" }}>
     <Button
       title="Default Button"
-      color="#2108ff"
-      onPress={() => console.log("Default button clicked")}
+      bgColor="#2108ff"
+      handlePress={() => console.log("Default button clicked")}
     />
   </View>
 );
