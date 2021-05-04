@@ -1,11 +1,36 @@
 {
+  "name": "camara-native",
+  "version": "1.0.0-beta.1",
   "main": "lib\\commonjs\\index.js",
+  "description": "A design system that helps you build your ideas quickly",
+  "author": {
+    "name": "Presh Onyee",
+    "email": "preshonyee@gmail.com"
+  },
+  "license": "MIT",
+  "repository": "Camaradotspace/camara-native",
+  "keywords": [
+    "React Native",
+    "Component",
+    "react-native-components",
+    "Library",
+    "Typescript",
+    "Storybook"
+  ],
+  "bugs": {
+    "url": "https://github.com/Camaradotspace/camara-native/issues"
+  },
+  "homepage": "https://github.com/Camaradotspace/camara-native#readme",
   "scripts": {
     "start": "expo start",
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
     "eject": "expo eject",
+    "test:unit": "jest",
+    "lint": "eslint",
+    "format": "prettier *.{js,tsx} -w",
+    "build-storybook": "build-storybook",
     "storybook": "start-storybook -p 6006",
     "prepare": "bob build"
   },
@@ -45,7 +70,6 @@
       "<rootDir>/lib/"
     ]
   },
-  "private": true,
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
