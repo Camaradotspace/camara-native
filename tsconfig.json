@@ -15,7 +15,7 @@
     "dist",
     "lib",
     "__mocks__",
-    "storybook",
+    ".storybook",
     "stories",
     "**/*.js",
     "**/*.spec.ts",

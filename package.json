@@ -1,7 +1,6 @@
 {
   "name": "camara-native",
   "version": "1.0.0-beta.4",
-  "main": "lib\\commonjs\\index.js",
   "description": "A design system that helps you build your ideas quickly",
   "author": {
     "name": "Presh Onyee",
@@ -33,14 +32,17 @@
     "format": "prettier *.{js,tsx} -w",
     "build-storybook": "build-storybook",
     "storybook": "start-storybook -p 6006",
-    "prepare": "bob build"
+    "prepare": "bob build",
+    "docs": "cd docs && yarn develop"
   },
   "dependencies": {
+    "@shopify/restyle": "^1.4.0",
     "expo": "~41.0.1",
     "expo-status-bar": "~1.0.4",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-native": "https://github.com/expo/react-native/archive/sdk-41.0.0.tar.gz",
+    "react-native-svg": "12.1.0",
     "react-native-web": "~0.13.12"
   },
   "devDependencies": {
@@ -76,6 +78,8 @@
       "path": "./node_modules/cz-conventional-changelog"
     }
   },
+  "main": "lib\\commonjs\\index.js",
+  "expoApp": "node_modules/expo/AppEntry.js",
   "react-native": "src\\index.ts",
   "module": "lib\\module\\index.js",
   "types": "lib\\typescript\\src\\index.d.ts",

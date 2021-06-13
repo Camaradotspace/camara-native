@@ -1,6 +1,6 @@
 export interface ButtonProps {
   title: string;
-  handlePress: () => void;
+  onPress: () => void;
   btnColor?: string;
   bgColor?: string;
   disabled?: boolean;

@@ -4,7 +4,7 @@ import { ButtonProps } from "./button.types";
 
 export const Button: React.FunctionComponent<ButtonProps> = ({
   title,
-  handlePress,
+  onPress,
   btnColor,
   disabled,
   bgColor,
@@ -13,7 +13,7 @@ export const Button: React.FunctionComponent<ButtonProps> = ({
     <View style={{ backgroundColor: bgColor }}>
       <RNButton
         title={title}
-        onPress={handlePress}
+        onPress={onPress}
         color={btnColor}
         disabled={disabled}
       />
