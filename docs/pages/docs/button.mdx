@@ -1,0 +1,63 @@
+---
+title: Button
+---
+
+import {
+  Button,
+  Text,
+  CamaraNativeThemeProvider,
+  PhoneView,
+} from "camara-native";
+import { LiveConfig } from "smooth-doc/components";
+
+<!-- Define `camara` module as `{ Button }` -->
+
+<LiveConfig
+  modules={{
+    "camara-native": { Button, Text, CamaraNativeThemeProvider, PhoneView },
+  }}
+/>
+
+# Button
+
+Buttons are user interface elements that initiates actions. This is their primary function and it is this function that makes them very different from links particularly on the web.
+
+<br></br>
+
+## Props
+
+Button properties
+
+| Property        | Description                                                                | Type                          | Default   | Version |
+| --------------- | -------------------------------------------------------------------------- | ----------------------------- | --------- | ------- |
+| backgroundColor | Sets the background color of the button                                    | `string`                      | -         |         |
+| block           | Allow button take full width of the parent element                         | `boolean`                     | false     |         |
+| color           | Sets the color of the button                                               | `string`                      | -         |         |
+| danger          | Use if call-to-action is irreversible or destructive                       | `boolean`                     | false     |         |
+| disabled        | Set disabled state so buttons look inactive and cannot be interacted with. | `boolean`                     | false     |         |
+| loading         | Set the loading status of the button                                       | `boolean`                     | false     |         |
+| onClick         | Callback fired when a button is clicked.                                   | `(event) => void`             | -         |         |
+| pill            | Set shape of button to pill-shaped.                                        | `boolean`                     | false     |         |
+| size            | How large should the button be?                                            | `large` `medium` `small`      | `medium`  |         |
+| variant         | What variant of the button is to be used?                                  | `primary` `secondary` `ghost` | `primary` |         |
+
+<br></br>
+
+## Usage
+
+### Variant
+
+```jsx live noInline
+import {
+  Button,
+  Text,
+  CamaraNativeThemeProvider,
+  PhoneView,
+} from "camara-native";
+
+render(
+  <PhoneView>
+    <Text>WoW</Text>
+  </PhoneView>
+);
+```

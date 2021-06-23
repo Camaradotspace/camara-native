@@ -8,5 +8,7 @@ module.exports = {
         siteUrl: "https://example.com",
       },
     },
+    `gatsby-plugin-react-native-web`,
+    `gatsby-plugin-react-helmet`,
   ],
 };

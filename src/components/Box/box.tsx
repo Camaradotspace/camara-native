@@ -1,4 +1,4 @@
 import { createBox } from "@shopify/restyle";
-import { CamaraTheme } from "../../utils/theme";
+import { CamaraTheme } from "../../theme/theme";
 
 export const Box = createBox<CamaraTheme>();

@@ -1,6 +1,6 @@
 import React from "react";
 import { ThemeProvider } from "@shopify/restyle";
-import { DARK_THEME, DEFAULT_THEME } from "../../utils/theme";
+import { DARK_THEME, theme as DEFAULT_THEME } from "../../theme/theme";
 
 interface ICamaraThemeProvider {
   children: React.ReactNode;

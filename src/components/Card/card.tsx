@@ -5,7 +5,7 @@ import {
   SpacingProps,
   VariantProps,
 } from "@shopify/restyle";
-import { CamaraTheme } from "../../utils/theme";
+import { CamaraTheme } from "../../theme/theme";
 
 type CardProps = SpacingProps<CamaraTheme> &
   VariantProps<CamaraTheme, "cardVariants">;

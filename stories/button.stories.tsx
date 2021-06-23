@@ -1,8 +1,8 @@
 import { action } from "@storybook/addon-actions";
 import { storiesOf } from "@storybook/react-native";
 import React from "react";
-import { Button } from "../src/components";
-import { PhoneView } from "../src/utils/iPhone";
+import { Button } from "../src";
+import { PhoneView } from "../src/components/Phone/iPhone";
 
 export default {
   title: "Button",
@@ -12,10 +12,14 @@ export default {
 storiesOf("Button", module)
   .addDecorator((getStory) => <PhoneView>{getStory()}</PhoneView>)
   .add("with text", () => (
-    <Button onPress={action("clicked-text")} title="Hello Button" />
+    <Button
+      variant="primary"
+      onPress={action("clicked-text")}
+      label="Hello Button"
+    />
   ))
   .add("with some emoji", () => (
-    <Button onPress={action("clicked-emoji")} title="😀 😎 👍 💯" />
+    <Button onPress={action("clicked-emoji")} label="😀 😎 👍 💯" />
   ));
 
 // import React from "react";

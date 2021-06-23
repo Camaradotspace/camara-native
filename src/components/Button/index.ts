@@ -1,1 +1,1 @@
-export * from "./button.ios";
+export * from "./button";

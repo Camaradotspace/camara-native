@@ -12,7 +12,7 @@ export const HomeIndicator = ({ theme }: IHomeIndicator) => {
         width="134"
         height="5"
         rx="2.5"
-        fill={theme === "dark" ? "black" : "white"}
+        fill={theme === "dark" ? "white" : "black"}
       />
     </Svg>
   );
